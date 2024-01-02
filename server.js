@@ -6,7 +6,7 @@ const cuid = require("cuid");
 
 // Require JSON file and set to variable noteData
 const noteData = require("./db/db.json");
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // Initialize app variable
 const app = express();
